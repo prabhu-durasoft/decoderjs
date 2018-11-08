@@ -34,5 +34,7 @@
 * **intermediate level**, where just one color is replicated 
 * **advanced level** where several colors can be replicated.
 
+
+
 * This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
