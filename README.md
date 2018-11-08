@@ -13,7 +13,7 @@
 * **White** means **a match of color**
 * **Black** means **positional match**
 
-### Sample IO
+## Sample IO
 * Assume the program has choosen the colors
 
 * **Red**, **Blue**, **White**, **Brown**, **Pink**
@@ -28,7 +28,7 @@
 |Red, Blue, White, Brown, Pink|`Black, Black, Black, Black, Black`|
 
 
-### 3 levels
+## 3 levels
 
 * **beginner level**, where the generated colors are unique. 
 * **intermediate level**, where just one color is replicated 
