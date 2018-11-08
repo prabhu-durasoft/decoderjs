@@ -1,6 +1,6 @@
 # Decoder
 
-* A browser-based game using ES6, React and Redux
+`A browser-based game using ES6, React and Redux`
 
 * User has to guess the colors chosen by the application. 
 * Application chooses five distinct colors from *Red*, *Green*, *Blue*, *White*, *Black*, *Yellow*, *Pink*, *Orange*, *Cyan* and *Brown*. 
