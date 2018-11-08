@@ -1,7 +1,12 @@
 {
   "name": "decoderjs",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "Decoder game in React and Redux",
+  "author": "Prabhu Sunderaraman",
+  "license": "ISC",
+  "homepage": "https://github.com/prabhu-durasoft/decoderjs#readme",
+  "main": "index.js",
   "dependencies": {
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
