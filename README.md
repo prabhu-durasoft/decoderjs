@@ -2,6 +2,8 @@
 
 `A browser-based game using ES6, React and Redux`
 
+## Description
+
 * User has to guess the colors chosen by the application. 
 * Application chooses five distinct colors from *Red*, *Green*, *Blue*, *White*, *Black*, *Yellow*, *Pink*, *Orange*, *Cyan* and *Brown*. 
 * User enters her choice of colors
@@ -11,7 +13,7 @@
 * **White** means **a match of color**
 * **Black** means **positional match**
 
-## Sample IO
+### Sample IO
 * Assume the program has choosen the colors
 
 * **Red**, **Blue**, **White**, **Brown**, **Pink**
@@ -25,8 +27,9 @@
 |Red, Blue, Brown, Pink, White|`Black, Black, White, White, White`|
 |Red, Blue, White, Brown, Pink|`Black, Black, Black, Black, Black`|
 
-* The program continues until either the user has cracked the code (guessed correctly)
-* There are 3 levels
+
+### 3 levels
+
 * **beginner level**, where the generated colors are unique. 
 * **intermediate level**, where just one color is replicated 
 * **advanced level** where several colors can be replicated.
