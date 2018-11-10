@@ -1,16 +1,16 @@
 const defaults = {
 	colors: [ 
-				Symbol('Red'), 
-				Symbol('Green'), 
-				Symbol('Blue'), 
-				Symbol('White'),
-				Symbol('Black'),
-				Symbol('Yellow'),
-				Symbol('Pink'),
-				Symbol('Orange'),
-				Symbol('Brown'),
-				Symbol('Melange'),
-				Symbol('Gray')
+			Symbol('Red'), 
+			Symbol('Green'), 
+			Symbol('Blue'), 
+			Symbol('White'),
+			Symbol('Black'),
+			Symbol('Yellow'),
+			Symbol('Pink'),
+			Symbol('Orange'),
+			Symbol('Brown'),
+			Symbol('Melange'),
+			Symbol('Gray')
 	],
 	levels: [
 			Symbol('Beginner'),
