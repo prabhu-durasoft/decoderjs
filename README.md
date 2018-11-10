@@ -9,12 +9,12 @@
 * User enters her choice of colors
 
 * Program reports the user's result using colors. 
-* **Red** means **no match**
-* **White** means **a match of color**
-* **Black** means **positional match**
+* **Red** indicates **no match** found
+* **White** means  **a match of color** found
+* **Black** says **positional match** found
 
 ## Sample IO
-* Assume the program has choosen the colors
+* Assume the program has chosen the colors
 
 * **Red**, **Blue**, **White**, **Brown**, **Pink**
 
