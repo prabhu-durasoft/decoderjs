@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AvailableColorsDisplayContainer from './availableColorsDisplayContainer';
 
 import './css/App.css';
 
@@ -11,6 +12,8 @@ class App extends Component {
             Decoder
           </p>
         </header>
+		<hr/>
+		<AvailableColorsDisplayContainer/>
       </div>
     );
   }
