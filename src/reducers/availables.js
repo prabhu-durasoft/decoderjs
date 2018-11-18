@@ -11,7 +11,7 @@ const defaults = {
 			[Symbol('Pink')]: { id: 'c_pink', color: 'pink' },
 			[Symbol('Orange')]: { id: 'c_orange', color: 'orange' },
 			[Symbol('Brown')]: { id: 'c_brown', color: 'brown' },
-			[Symbol('Melange')]: { id: 'c_melange', color: 'melange' },
+			[Symbol('LightBlue')]: { id: 'c_lightblue', color: 'lightblue' },
 			[Symbol('Gray')]: { id: 'c_gray', color: 'gray' }
 	},
 	levels: {

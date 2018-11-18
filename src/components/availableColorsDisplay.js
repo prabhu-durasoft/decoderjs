@@ -10,7 +10,7 @@ class AvailableColorsDisplay  extends Component {
 		let colorsList = [];
 		if(colors) {
 			for(let key of Object.getOwnPropertySymbols(colors)) {
-				colorsList.push(<p key={colors[key].id}>{colors[key].color}</p>);
+				colorsList.push(<span className="colorBox" key={colors[key].id} style={{backgroundColor: `${colors[key].color}`}}>&nbsp;</span>);
 			}
 		}
 		return colorsList;
