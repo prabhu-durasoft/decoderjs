@@ -15,9 +15,9 @@ const defaults = {
 			[Symbol('Gray')]: { id: 'c_gray', color: 'gray' }
 	},
 	levels: {
-			[Symbol('Beginner')]: { id: 'l_beginner', level: 'Beginner' },
-			[Symbol('Intermediate')]: { id: 'l_intermediate', level: 'Intermediate' },
-			[Symbol('Advanced')]: { id: 'l_advanced', level: 'Advanced' }
+			[Symbol('Beginner')]: { id: 'l_beginner', name: 'Beginner' },
+			[Symbol('Intermediate')]: { id: 'l_intermediate', name: 'Intermediate' },
+			[Symbol('Advanced')]: { id: 'l_advanced', name: 'Advanced' }
 	}	
 };
 

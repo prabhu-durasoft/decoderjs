@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+
+.colorBox {
+	display: inline-block;
+	min-width: 80px;
+	min-height: 60px;
+	margin: 3px; 
+	box-shadow: 1px 1px 1px black;
+}
+
+.level_selector .levels {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	
+}
+
+.level_selector  li {
+	display: inline-block;
+	text-align: center;
+	padding: 16px;
+	font-size: 22px;
+}
+	
+.level_selector input[type="radio"] {
+	transform: scale(1.2);
+	margin:10px;
+}
+
+.level_selector button {
+	width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 10px;
+	outline: none;
+}

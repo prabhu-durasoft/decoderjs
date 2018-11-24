@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import AvailableColorsDisplayContainer from './availableColorsDisplayContainer';
+import LevelSelectorContainer from './levelSelectorContainer';
 
-import './css/App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header>
-          <p>
+          <h1>
             Decoder
-          </p>
+          </h1>
         </header>
 		<hr/>
 		<AvailableColorsDisplayContainer/>
+		<hr/>
+		<LevelSelectorContainer/>
       </div>
     );
   }
