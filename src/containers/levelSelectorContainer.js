@@ -1,16 +1,25 @@
 import LevelSelector from '../components/levelSelector';
 import { connect } from 'react-redux';
+import { AVAILABLE_LEVELS, LEVEL_OF_GAME, GENERATE_TARGET_COLORS } from '../actions';
 
-const mapStateToProps = (state) => {
+
+const mapStateToProps = ({game}) => {
 	return {
-		levels: state.availables.availableLevels
-	};	
+		availableLevels: game.availableLevels,
+		levelOfGame: game.levelOfGame
+	};
 };
 
 const mapDispatchToProps = (dispatch) => {
 	return {
 		loadAvailableLevels: () => dispatch({
-			type: "GET_AVAILABLE_LEVELS"
+			type: AVAILABLE_LEVELS
+		}),
+		setLevelOfGame: (levelId) => dispatch({
+			type: LEVEL_OF_GAME, payload: { levelId }	
+		}),
+		generateTargetColors: () => dispatch({
+			type: GENERATE_TARGET_COLORS
 		})
 	}
 };

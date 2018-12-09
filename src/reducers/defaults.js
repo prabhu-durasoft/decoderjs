@@ -1,5 +1,3 @@
-import { availableColors, availableLevels } from '../actions/';
-
 const defaults = {
 	colors: { 
 			[Symbol('Red')]: { id: 'c_red', color: 'red' }, 
@@ -21,24 +19,4 @@ const defaults = {
 	}	
 };
 
-const reducers = (state = {
-	availableColors: {},
-	availableLevels: {}
-}, action) => {
-	switch (action.type) {
-	case 'GET_AVAILABLE_COLORS':
-		return {
-			...state,
-			availableColors: defaults.colors
-		}
-	case 'GET_AVAILABLE_LEVELS':	
-		return {
-			...state,
-			availableLevels: defaults.levels
-		}
-	default:
-		return state;	
-	}
-};
-
-export default reducers;
+export default defaults;

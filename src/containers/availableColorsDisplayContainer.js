@@ -1,16 +1,17 @@
 import AvailableColorsDisplay from '../components/availableColorsDisplay';
 import { connect } from 'react-redux';
+import { AVAILABLE_COLORS } from '../actions';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({game}) => {
 	return {
-		colors: state.availables.availableColors
-	};	
+		availableColors: game.availableColors	
+	};
 };
 
 const mapDispatchToProps = (dispatch) => {
 	return {
 		loadAvailableColors: () => dispatch({
-			type: "GET_AVAILABLE_COLORS"
+			type: AVAILABLE_COLORS
 		})
 	}
 };
