@@ -1,6 +1,6 @@
 import { AVAILABLE_COLORS, AVAILABLE_LEVELS, LEVEL_OF_GAME, GENERATE_TARGET_COLORS } from '../actions/';
 import defaults from './defaults';  
-import generateColors from './colorsGenerator'
+import generateTargetColors from './colorsGenerator'
 
 const initialState = {
 	availableColors: [],
@@ -18,7 +18,8 @@ const gameReducer = (state = initialState, action) => {
 	case LEVEL_OF_GAME:
 		return { ...state, levelOfGame: action.payload.levelId };
 	case GENERATE_TARGET_COLORS:	
-		let targetColors = generateColors(state.levelOfGame);	
+		let targetColors = generateTargetColors(state.levelOfGame, state.availableColors);	
+		console.log(targetColors);
 		return { ...state, targetColors };
 	default:
 		return state;
