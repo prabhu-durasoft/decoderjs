@@ -19,7 +19,6 @@ const gameReducer = (state = initialState, action) => {
 		return { ...state, levelOfGame: action.payload.levelId };
 	case GENERATE_TARGET_COLORS:	
 		let targetColors = generateTargetColors(state.levelOfGame, state.availableColors);	
-		console.log(targetColors);
 		return { ...state, targetColors };
 	default:
 		return state;
