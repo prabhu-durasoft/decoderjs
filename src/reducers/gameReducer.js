@@ -1,12 +1,13 @@
 import { AVAILABLE_COLORS, AVAILABLE_LEVELS, LEVEL_OF_GAME, GENERATE_TARGET_COLORS } from '../actions/';
 import defaults from './defaults';  
-import generateTargetColors from './colorsGenerator'
+import generateTargetColors from './colorsGenerator';
 
 const initialState = {
 	availableColors: [],
 	availableLevels: [],
 	levelOfGame: '',
-	targetColors: []
+	targetColors: [],
+	gameStarted: false
 }
 
 const gameReducer = (state = initialState, action) => {
@@ -19,7 +20,11 @@ const gameReducer = (state = initialState, action) => {
 		return { ...state, levelOfGame: action.payload.levelId };
 	case GENERATE_TARGET_COLORS:	
 		let targetColors = generateTargetColors(state.levelOfGame, state.availableColors);	
-		return { ...state, targetColors };
+		let gameStarted = true;
+		
+		return Object.assign({}, state, {
+			targetColors, gameStarted
+		}); //{ ...state, targetColors };
 	default:
 		return state;
 	}

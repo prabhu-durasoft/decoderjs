@@ -6,7 +6,8 @@ import { AVAILABLE_LEVELS, LEVEL_OF_GAME, GENERATE_TARGET_COLORS } from '../acti
 const mapStateToProps = ({game}) => {
 	return {
 		availableLevels: game.availableLevels,
-		levelOfGame: game.levelOfGame
+		levelOfGame: game.levelOfGame,
+		gameStarted: game.gameStarted
 	};
 };
 

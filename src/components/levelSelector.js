@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 
 class LevelSelector  extends Component {
 
@@ -29,11 +30,15 @@ class LevelSelector  extends Component {
 	}
 
 	render() {
+		if(this.props.gameStarted && this.props.gameStarted === true) {
+			return (<Redirect to="/game"/>);
+		}
+		
 		return (<div className="level_selector">
-			<h2>Select a Level</h2>
-			{ this.displayLevels() }
-			<button disabled={this.props.levelOfGame === '' ? 'disabled': ''} onClick={this.startGameClicked.bind(this)}>Start Game</button>
-		</div>);	
+				<h2>Select a Level</h2>
+				{ this.displayLevels() }
+				<button disabled={this.props.levelOfGame === '' ? 'disabled': ''} onClick={this.startGameClicked.bind(this)}>Start Game</button>
+		</div>);		
 	}
 
 }

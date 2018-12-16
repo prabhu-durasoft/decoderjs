@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import AvailableColorsDisplayContainer from './availableColorsDisplayContainer';
-import LevelSelectorContainer from './levelSelectorContainer';
-
+import MainRoutes from '../routes';
 
 class App extends Component {
   render() {
@@ -13,9 +11,7 @@ class App extends Component {
           </h1>
         </header>
 		<hr/>
-		<AvailableColorsDisplayContainer/>
-		<hr/>
-		<LevelSelectorContainer/>
+		<MainRoutes/>
       </div>
     );
   }
