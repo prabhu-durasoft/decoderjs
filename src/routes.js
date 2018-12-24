@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LevelSelectorContainer from './containers/levelSelectorContainer';
 import AvailableColorsDisplayContainer from './containers/availableColorsDisplayContainer';
-import GamePanel from './components/gamePanel';
+import GamePanelContainer from './containers/gamePanelContainer';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 
@@ -13,12 +13,12 @@ class MainRoutes extends Component {
 					<div>
 						<Route exact path="/" render={props => (
 							<div>
-								<AvailableColorsDisplayContainer/>
+								 <AvailableColorsDisplayContainer/>
 								 <hr/>
 								 <LevelSelectorContainer/> 
 							</div>
 						)}/>
-						<Route exact path="/game" component={GamePanel}/>
+						<Route exact path="/game" component={GamePanelContainer}/>
 					</div>
 			</BrowserRouter>	
 		);	

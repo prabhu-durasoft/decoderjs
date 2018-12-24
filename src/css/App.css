@@ -38,3 +38,16 @@
     margin: 10px;
 	outline: none;
 }
+
+.colorSelectorBox {
+	display: inline-block;
+    min-width: 20px;
+    min-height: 20px;
+    margin: 1px 0px 1px 6px;
+    box-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+.colorSelectorDropdown ul {
+	min-width: 80px !important;
+}
